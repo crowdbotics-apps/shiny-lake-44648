@@ -14,6 +14,24 @@ function api_v1_login_create(payload) {
 function api_v1_signup_create(payload) {
   return shinylakeAPI.post(`/api/v1/signup/`, payload)
 }
+function modules_privacy_policy_list(payload) {
+  return shinylakeAPI.get(`/modules/privacy-policy/`)
+}
+function modules_privacy_policy_create(payload) {
+  return shinylakeAPI.post(`/modules/privacy-policy/`, payload)
+}
+function modules_privacy_policy_retrieve(payload) {
+  return shinylakeAPI.get(`/modules/privacy-policy/${payload.id}/`)
+}
+function modules_privacy_policy_update(payload) {
+  return shinylakeAPI.put(`/modules/privacy-policy/${payload.id}/`, payload)
+}
+function modules_privacy_policy_partial_update(payload) {
+  return shinylakeAPI.patch(`/modules/privacy-policy/${payload.id}/`, payload)
+}
+function modules_privacy_policy_destroy(payload) {
+  return shinylakeAPI.delete(`/modules/privacy-policy/${payload.id}/`)
+}
 function modules_two_factor_authentication_enable_2fa_retrieve(payload) {
   return shinylakeAPI.get(`/modules/two-factor-authentication/enable/2fa`)
 }
@@ -78,6 +96,12 @@ export const apiService = {
   api_docs_schema_retrieve,
   api_v1_login_create,
   api_v1_signup_create,
+  modules_privacy_policy_list,
+  modules_privacy_policy_create,
+  modules_privacy_policy_retrieve,
+  modules_privacy_policy_update,
+  modules_privacy_policy_partial_update,
+  modules_privacy_policy_destroy,
   modules_two_factor_authentication_enable_2fa_retrieve,
   modules_two_factor_authentication_enable_2fa_create,
   modules_two_factor_authentication_enable_2fa_destroy,
