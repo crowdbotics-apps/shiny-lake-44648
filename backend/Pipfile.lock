@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0f836a2daa2fc70aff57403944d6ef21e2f70b0ea2b45b737f20db8396da31e7"
+            "sha256": "3d6098944b9baaf693e9eae0b57ffce7535c8a51a31beafc9f59115547ca7f21"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -173,6 +173,10 @@
         "cb-django-two-factor-authentication": {
             "editable": true,
             "path": "./modules/django_two_factor_authentication"
+        },
+        "cb-privacy-policy": {
+            "editable": true,
+            "path": "./modules/privacy_policy"
         },
         "certifi": {
             "hashes": [
